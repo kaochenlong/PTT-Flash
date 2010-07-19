@@ -1,3 +1,7 @@
-This is a simple Registration and Guestbook system, with a easy admin system after login, just built for the 3rd PTT-Flash Workshop in Taiwan. :)
+This is a simple Registration and Guestbook system, with some easy admin features after login, just built for the 3rd PTT-Flash Workshop in Taiwan. :)
 
+- if you want to use the easy admin features, you might need to create an account in Administrator Model, just type in login_id and login_pw without any encryption (cause I'm a lazy person XD)
+
+- 
 Eddie Kao (eddie@adcube.com.tw)
+2010.7.19
