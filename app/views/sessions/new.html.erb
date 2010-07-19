@@ -1,0 +1,18 @@
+<% content_for :body do -%>
+登入<hr />
+	<% form_for :administrator, @administrator, :url => { :action => 'create' } do |f| -%>
+
+		<div class="text_fields">
+			<div><%= f.label :login_id, '帳號：' %></div>
+			<div><%= f.text_field :login_id %></div>
+		</div>
+	
+		<div class="text_fields">
+			<div><%= f.label :login_pw, '密碼：' %></div>
+			<div><%= f.password_field :login_pw %></div>
+		</div>
+	
+		<%= submit_tag "Login", :id => "submit" %>
+	
+	<% end -%>
+<% end -%>

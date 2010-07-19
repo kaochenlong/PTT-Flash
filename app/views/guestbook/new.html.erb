@@ -1,0 +1,7 @@
+<% content_for :body do -%>
+	<% form_for @guestbook do |f| -%>
+	  <%= f.label :nickname, "暱稱：" %><%= f.text_field :nickname, :size => '20' %><br />
+	  <%= f.label :content, "標題：" %><%= f.text_area :content, :size => '45x5' %><br />
+	  <br /><%= submit_tag "送出", :confirm => '確認送出?!' %>
+	<% end -%>
+<% end -%>

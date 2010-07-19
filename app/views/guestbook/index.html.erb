@@ -1,0 +1,22 @@
+<% content_for :body do -%>
+	<div id="add_guestbook"><%= link_to '我要留言', new_guestbook_path %></div>
+	<h1>留言版</h1>
+	<hr />
+	
+	<% if !@guestbooks.blank? %>
+	  <% for guestbook in @guestbooks %>
+	    <div class="guestbook_content">
+		<% if is_admin? -%>
+			[<%= link_to '刪除', guestbook_path(guestbook), :method => :delete, :confirm => '確認刪除?!' %>]
+		<% end -%>
+			<%=h guestbook.nickname -%>說:<br />
+	    	<%=h simple_format(guestbook.content) %> <br />
+	    </div>
+	  <% end %>
+	<% else %>
+	  目前尚無資料
+	<% end %>
+	
+	<%= will_paginate @guestbooks %>
+	
+<% end -%>

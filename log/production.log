@@ -1,0 +1,34 @@
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-07-19 17:11:46) [GET]
+  Parameters: {"action"=>"index", "controller"=>"main"}
+
+ActiveRecord::StatementInvalid (Could not find table 'registers'):
+  app/models/register.rb:19:in `current_registers'
+  app/controllers/application_controller.rb:24:in `get_current_registers'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-07-19 17:11:47) [GET]
+  Parameters: {"action"=>"index", "controller"=>"main"}
+
+ActiveRecord::StatementInvalid (Could not find table 'registers'):
+  app/models/register.rb:19:in `current_registers'
+  app/controllers/application_controller.rb:24:in `get_current_registers'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MainController#index (for 127.0.0.1 at 2010-07-19 17:12:14) [GET]
+  Parameters: {"action"=>"index", "controller"=>"main"}
+Rendering template within layouts/application
+Rendering main/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing RegisterController#new (for 127.0.0.1 at 2010-07-19 17:12:20) [GET]
+  Parameters: {"action"=>"new", "controller"=>"register"}
+Rendering template within layouts/application
+Rendering register/new
+Completed in 14ms (View: 11, DB: 0) | 200 OK [http://127.0.0.1/registers/new]

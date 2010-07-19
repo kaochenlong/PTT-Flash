@@ -1,0 +1,79 @@
+<% content_for :body do -%>
+	<h1 style="font-size:28px">第三屆 <%=h site_name%></h1>
+	<hr />
+
+	<div id="description">
+		不知不覺距離去年的<a href="http://registrano.com/events/flash-workshop" target="_blank"><%=h site_name %></a>即將滿一週年了。(<a href="http://picasaweb.google.com/eddiexx/PTTFlash" target="_blank">照片集</a>)<br /><br />
+
+		對於平常在版上出沒的神人大大們很好奇嗎?<br />
+		想知道他們還有什麼特別的大絕招嗎?<br /><br />
+
+		第三屆<%=h site_name %>又將於這個夏天登場了，這回我們還難得特別請到了幾位高手、前輩們來分享心得<br /><br />
+
+		基本上這個活動的主題，只要是Flash或AS相關的都行，舉凡Flash/AS/AIR/Game/Mobile相關的主題都歡迎的<br />
+		當然，如果您也是滿腔熱血不跟別人分享一下會很痛苦的那種人<br />
+		歡迎來<%= link_to '留言版', guestbooks_path %>留個言，只要時間夠，一定也讓您來現一下 :)<br /><br />
+
+		很遺憾的因為場地人數限制的關係，本次聚會僅能容納<strong style="font-size:30px; color:red"><%= MaxRegister -%></strong>人<br />
+		未能報到名的朋友們也沒關係，我們會後也會把投影片及影音檔放到網路上的。<br />
+	</div>
+	
+	<hr />
+
+	<h3>主題及講者介紹：</h3>
+	
+	<div class="speaker_container">
+		
+		<div class="speakers">
+			<img src="/images/speakers/milkmidi.jpg" width="100" height="100" alt="Milkmidi" border="0" /><br /><a href="http://milkmidi.blogspot.com/" target="_blank" class="speaker_name">milkmidi奶綠茶</a>：<br />Progression入門<br />
+		</div>
+		
+		<div class="speakers">
+			<img src="/images/speakers/maso.png" width="100" height="100" alt="Maso" border="0" /><br />
+			<a href="http://masolin.blogspot.com/" target="_blank" class="speaker_name">Maso</a>：<br />AIR for Android<br />
+		</div>
+		
+		
+		<div class="speakers">
+			<img src="/images/speakers/etrex.png" width="100" height="100" alt="Etrex" border="0" /><br />
+			<a href="http://etrex.blogspot.com/" target="_blank" class="speaker_name">etrex</a>：<br />XGraphics手繪風格的動畫framework<br />
+		</div>
+		
+		<div class="speakers">
+			<img src="/images/speakers/jones.png" width="100" height="100" alt="Jones" border="0" /><br />
+			<a href="http://www.facebook.com/Jones86723" target="_blank" class="speaker_name">jones</a>：<br />多人連線遊戲<br />
+		</div>
+		
+	</div>
+	
+	<div class="speaker_container">
+		
+		
+		
+		<div class="speakers">
+			<img src="/images/speakers/cjcat.png" width="100" height="100" alt="Cjcat" border="0" /><br />
+			<a href="http://cjcat.blogspot.com/" target="_blank" class="speaker_name">cjcat</a>：<br />Componnet-Based Game Engine<br />
+		</div>
+		
+		<div class="speakers">
+			<img src="/images/speakers/eddie.png" width="100" height="100" alt="Aquarianboy" border="0" /><br />
+			<a href="http://blog.eddie.com.tw/" target="_blank" class="speaker_name">高見龍</a>：<br />AS3 Better Practices<br />
+		</div>
+		
+	</div>
+	
+	<div id="date_and_location">
+		費用：0，但每人需負擔場地租用之最低消費，詳細請見<a href="http://www.gozcafe.com/2008/10/blog-post_27.html" target="_blank">網站說明</a><br />
+		日期：2010年7月24日(星期六) 下午 14:00~18:00<br />
+		地點：台北市松山區民生東路三段140巷11號 <a href="http://www.gozcafe.com/" target="_blank">果子咖啡</a>
+	</div>
+
+	<div class="register-now">
+		<%= link_to "現在就報名!", new_register_path, :class => "register-button" %>
+	</div>
+
+	<div id="map">
+		<iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps/ms?ie=UTF8&amp;hl=zh-TW&amp;source=embed&amp;msa=0&amp;msid=115711622477039770409.00045d5ccad424a860d77&amp;ll=25.057417,121.547542&amp;spn=0.013607,0.010986&amp;output=embed"></iframe>
+	</div>
+
+<% end -%>

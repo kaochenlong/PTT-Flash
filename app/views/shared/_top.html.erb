@@ -1,0 +1,11 @@
+<div id="top">
+	<%= link_to "首頁", root_path %> 
+	| <%= link_to "下載", '/downloads' %>
+	| <%= link_to "留言版", guestbooks_path %>
+	| <%= link_to "報名", new_register_path, :id => 'register_top' %> (報名人數：<%= registers %>人/<%= MaxRegister %>人)
+	<% if is_admin? -%>
+	| <%= link_to '報名列表', registers_path %>
+	| <%= link_to '登出', '/logout' -%>
+	<% end %>
+	&nbsp;
+</div>

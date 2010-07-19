@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="Keywords" content="第三屆PTT-Flash閃光俱樂部" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta name="description" content="對於平常在版上出沒的神人大大們很好奇嗎? 想知道他們還有什麼特別的大絕招嗎?.."/>
+<link rel="image_src" type="image/jpeg" href="/images/facebook.png" />
+<title><%= yield :page_title or site_name %></title>
+<%= stylesheet_link_tag 'reset', 'style', :cache => true %>
+</head>
+<body>
+	<center>
+	<div id="main">
+		<%= render :partial => "shared/top", :locals => { :registers => @current_registers } %>
+		<% if flash[:notice] -%><div class="flash_notice"><%=h flash[:notice] %></div><% end -%>
+		<div class="container">
+		<%= yield :body %>
+		</div>
+		<%= render :partial => "shared/footer" -%>
+	</div>
+	</center>
+</body>
+</html>

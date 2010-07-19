@@ -1,0 +1,33 @@
+<% content_for :body do -%>
+	<div>
+		
+		<% if !@registers.blank? %>
+		<table>
+			<tr>
+				<td class="table_header" style="width:120px">暱稱</td>
+				<td class="table_header" style="width:120px">Email</td>
+				<td class="table_header" style="width:80px">TEL</td>
+				<td class="table_header" style="width:80px">PTT ID</td>
+				<td class="table_header" style="width:130px">報名時間</td>
+				<td class="table_header" style="width:80px">IP Address</td>
+				<td class="table_header">&nbsp;</td>
+			</tr>
+		  <% for reg in @registers %>
+		    <tr>
+				<td class="table_content"><%=h reg.nickname %></td>
+				<td class="table_content"><%=h reg.email %></td>
+				<td class="table_content"><%=h reg.tel %></td>
+				<td class="table_content"><%=h reg.ptt_id %></td>
+				<td class="table_content"><%=h reg.created_at.to_s(:db) %></td>
+				<td class="table_content"><%=h reg.ip_address %></td>
+				<td class="table_content"><%= link_to '刪除', register_path(reg), :method => :delete, :confirm => '確認刪除?!' %></td>
+			</tr>
+		  <% end %>
+		</table>
+		<% else %>
+		目前尚無人報名 
+		<% end %>
+		
+		
+	</div>
+<% end -%>

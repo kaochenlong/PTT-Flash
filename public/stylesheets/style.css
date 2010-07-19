@@ -1,0 +1,226 @@
+body
+{
+	background-color: #c0c0c0;
+}
+
+a
+{
+	color: #04004b;
+}
+
+#main
+{
+	margin-top: 3px;
+	width: 900px;
+	background-color: white;
+}
+
+#footer
+{
+	color: white;
+	background-color: #c00;
+	padding: 3px;
+	text-align: center;
+}
+
+#footer a
+{
+	color: white;
+	font-size: 13px;
+}
+
+#top
+{
+	background-color: #c00;
+	text-align: right;
+	padding: 5px 3px 5px 3px;
+	font-size: 13px;
+	color: white;
+}
+
+#top a
+{
+	color: white;
+}
+
+.container
+{
+	text-align: left;
+	padding: 15px;
+}
+
+.register-now
+{
+	width: 100px;
+}
+
+.register-button
+{
+	text-align: center;
+	display: block;
+	padding: 5px;
+	margin: 5px auto;
+	border: 2px solid #cc0033;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-o-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px;
+	-o-box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px;
+	box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px;
+	text-decoration: none;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+
+.register-button:hover 
+{
+	background: #660000;
+	color: #ffffff;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 3px 16px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.2) 0 3px 16px;
+	-o-box-shadow: rgba(0, 0, 0, 0.2) 0 3px 16px;
+	box-shadow: rgba(0, 0, 0, 0.2) 0 3px 16px;
+	
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	-o-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+}
+
+#map
+{
+	margin: 10px 0px 10px 0px;
+	height: 200px;
+}
+
+
+#date_and_location
+{
+	clear: both;
+	text-align: left;
+}
+
+.flash_notice
+{
+	text-align: center;
+	color: #ffffff;
+	font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+	font-size: 30px;
+	background-color: #ff3333;
+	padding: 15px;
+	margin: 5px;
+}
+
+div.text_fields
+{
+	margin: 5px;
+}
+
+div.text_fields label
+{
+	color: black;
+}
+
+div.text_fields input
+{
+	color: gray;
+}
+
+.fieldWithErrors input
+{
+	color: white;
+	background-color: red;
+}
+
+.speakers
+{
+	float: left;
+	padding: 3px;
+	font-size: 16px;
+	margin-bottom: 10px;
+	width: 200px;
+}
+
+#add_guestbook
+{
+	float: right;
+	text-align: center;
+	background-color: red;
+	width: 100px;
+	padding: 3px;
+	color: white;
+}
+
+#add_guestbook a
+{
+	color: white;
+}
+
+.guestbook_content
+{
+	margin-bottom: 10px;
+	font-size: 16px;
+}
+
+.table_header
+{
+	background-color:black; 
+	color:white;
+	padding:3px;
+	text-align:center;
+}
+
+.table_content
+{
+	padding: 5px;
+}
+
+.speaker_name
+{
+	color: red;
+}
+
+.speaker_container
+{
+	clear: both;
+}
+
+#register_top
+{
+	font-size: 27px;
+}
+
+#errorExplanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#errorExplanation ul li {
+  font-size: 14px;
+  padding: 2px;
+  list-style: none;
+}
